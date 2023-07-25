@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('clone') {
             steps {
-                echo 'Hello World'
+                git 'https://github.com/ingenuous1111/jenkins-pipeline-gitflow-maven.git'
             }
         }
         
